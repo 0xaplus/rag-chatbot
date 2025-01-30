@@ -1,6 +1,6 @@
 import ollama from "ollama";
 import { ChromaClient } from "chromadb";
-import { getConfig } from "./utils";
+import { getConfig } from "../config/config";
 
 const { embedmodel, mainmodel } = getConfig();
 

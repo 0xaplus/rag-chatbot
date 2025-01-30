@@ -1,9 +1,4 @@
-import config from "./config.json";
 import { readFile } from "fs/promises";
-
-export function getConfig(): { embedmodel: string; mainmodel: string } {
-  return config;
-}
 
 export async function jsonToText(path: string): Promise<string> {
   try {

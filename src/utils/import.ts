@@ -1,6 +1,7 @@
 import ollama from "ollama";
 import { ChromaClient } from "chromadb";
-import { getConfig, jsonToText } from "./utils";
+import { jsonToText } from "./utils";
+import { getConfig } from "../config/config";
 import { chunkTextBySentences } from "matts-llm-tools";
 
 const chroma = new ChromaClient({ path: "http://localhost:8000" });

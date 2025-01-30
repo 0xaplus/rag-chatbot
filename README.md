@@ -51,7 +51,7 @@ This project combines **ChromaDB** for storing and retrieving document embedding
 
 ## Prerequisites
 The following softwares must exist on the local machine to be able to run the rag chatbot:
-- ChromaDB
+- ChromaDB 
 - Ollama
 - Nodejs
 
@@ -67,12 +67,17 @@ The following softwares must exist on the local machine to be able to run the ra
 $ npm install
 ```
 
-3. Populate ChromaDB with datasets
+3. Run chromadb
 ```bash
-$ tsx import.ts
+$ chroma run
 ```
 
-4. Run server
+4. Populate ChromaDB with datasets
+```bash
+$ tsx ./utils/import.ts
+```
+
+5. Run server
 ```bash
 $ tsx index.ts
 

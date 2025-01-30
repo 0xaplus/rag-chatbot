@@ -1,5 +1,5 @@
 import express from "express";
-import { search } from "./search";
+import { search } from "./services/search";
 
 const app = express();
 const PORT = 3030;
